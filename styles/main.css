@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/abstract-blur.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.glass-card{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.media{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @media screen and (max-width: 992px){
+        .glass-card{
+            width: 70vw;
+        }
+        h1{
+            font-size: 2.25rem;
+        }
+        
+        h2{
+            font-size: 1rem;
+        }
+        .media{
+            font-size: 1rem;
+        }
+    }
